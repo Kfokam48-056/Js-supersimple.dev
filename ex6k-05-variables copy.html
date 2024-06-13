@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Cart Quantity</p>
+    <button onclick="
+                      console.log(`Cart quantity: ${cartQuantity}`);
+    ">Show Quantity</button>
+    <button onclick="
+                    cartQuantity += 1;
+                    if(cartQuantity >=0 && cartQuantity <=10){
+                        console.log(`Cart quantity: ${cartQuantity}`);
+                    }
+                    else if(cartQuantity>10){
+                        alert('The cart is full.');
+                        cartQuantity = 10;
+                    }
+    ">Add to Cart</button>
+    <button onclick="
+                    cartQuantity += 2;
+                    if(cartQuantity >=0 && cartQuantity <=10){
+                        console.log(`Cart quantity: ${cartQuantity}`);
+                    }
+                    else if(cartQuantity>10){
+                        alert('The cart is full.');
+                        cartQuantity = 10;
+                    }
+    ">+2</button>
+    <button onclick="
+                        cartQuantity += 3;
+                        if(cartQuantity >=0 && cartQuantity <=10){
+                        console.log(`Cart quantity: ${cartQuantity}`);
+                        }
+                        else if(cartQuantity>10){
+                            alert('The cart is full.');
+                            cartQuantity = 10;
+                        }
+    ">+3</button>
+    <button onclick="
+    cartQuantity += 4;
+    if(cartQuantity >=0 && cartQuantity <=10){
+                        console.log(`Cart quantity: ${cartQuantity}`);
+                        }
+                        else if(cartQuantity>10){
+                            alert('The cart is full.');
+                            cartQuantity = 10;
+                        }
+">+4</button>
+<button onclick="
+     cartQuantity += 5;
+     if(cartQuantity >=0 && cartQuantity <=10){
+            console.log(`Cart quantity: ${cartQuantity}`);
+            }
+            else if(cartQuantity>10){
+                alert('The cart is full.');
+                cartQuantity = 10;
+            }
+">+5</button>
+    <button onclick="
+                    if((cartQuantity -1) < 0){
+                        alert('Not enough items in the cart');
+                    }
+                    else{
+                        cartQuantity -= 1;
+                        console.log(`Cart quantity: ${cartQuantity}`);
+                    }
+    ">Remove from cart</button>
+    <button onclick="
+               if((cartQuantity -2) < 0){
+                        alert('Not enough items in the cart');
+                    }
+                    else{
+                        cartQuantity -= 2;
+                        console.log(`Cart quantity: ${cartQuantity}`);
+                    }
+">-2</button>
+    <button onclick="
+                    if((cartQuantity -3) < 0){
+                        alert('Not enough items in the cart');
+                    }
+                    else{
+                        cartQuantity -= 3;
+                        console.log(`Cart quantity: ${cartQuantity}`);
+                    }
+    ">-3</button>
+    <button onclick="
+                    cartQuantity = 0;
+                    console.log('cart was reset');
+    ">Reset Cart</button>
+    <script>
+        let cartQuantity = 0;
+    </script>
+</body>
+</html>

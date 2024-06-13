@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex6f-j</title>
+</head>
+<body>
+    <h1>Lesson 6f-j Exercises - Booleans and If-statements</h1>
+    <button onclick="
+                      const randomNumber = Math.random();
+                      let computerMove = ''
+                        let result = '';
+                        if(randomNumber< 0.5){
+                            computerMove = 'Head';
+                            
+                        }
+                        else{
+                        computerMove = 'Tail';
+                        }
+                        
+                        if(computerMove === 'Head'){
+                            result = 'You win'
+                        }
+                        else{
+                            result = 'You loose';
+                        }
+                        alert(`You guess a Head.The coin felt on a ${computerMove}.\n${result}`)
+    ">Head</button>
+
+    <button onclick="
+                     const randomNumber = Math.random();
+                     let computerMove = '';
+                     let result = '';
+                     if(randomNumber < 0.5){
+                        computerMove = 'Head';
+                     }
+                     else {
+                        computerMove = 'Tail';
+                     }
+                     if(computerMove === 'Tail'){
+                        result ='You win';
+                     }
+                     else{
+                        result = 'You loose';
+                     }
+                     alert(`You guess a Tail.The coin felt on a ${computerMove}.\n${result}`);
+    ">Tail</button>
+    <script>
+    </script>
+</body>
+</html>
